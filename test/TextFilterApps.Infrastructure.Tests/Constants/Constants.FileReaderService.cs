@@ -1,0 +1,16 @@
+﻿namespace TextFilterApps.Infrastructure.Tests.Constants;
+
+public static partial class Constants
+{
+    public static class FileReaderService
+    {
+        public const string FilePath1 = "../../../TextFiles/TextFile1.txt";
+
+        public const string FilePath1_CorrectFileContents = "Humpty Dumpty sat on a wall.\r\nHumpty Dumpty had a great fall.\r\nAll the king's horses and all the king's men\r\nCouldn't put Humpty together again.";
+
+        public const string EmptyFile_CorrectFileContents = "";
+
+        public const string InvalidFilePath = "../File.txt";
+        public const string EmptyFile = "../../../TextFiles/EmptyFile.txt";
+    }
+}
