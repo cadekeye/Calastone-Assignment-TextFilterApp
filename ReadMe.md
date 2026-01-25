@@ -22,6 +22,9 @@ This is my application which i believe solves the issue described. Within the sr
 
 - TextFilterApps.Infrastructure
 
+  <img width="636" height="732" alt="image" src="https://github.com/user-attachments/assets/291ee049-8fb3-42a1-8aad-2fba3197875b" />
+
+
 To run please run from TextFilterApps.Presentation.
 
 ## Unit Tests
