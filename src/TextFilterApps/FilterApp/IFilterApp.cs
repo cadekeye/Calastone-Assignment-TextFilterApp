@@ -2,5 +2,5 @@
 
 public interface IFilterApp
 {
-    Task Handle();
+    Task HandleTextFilter(string filePath);
 }

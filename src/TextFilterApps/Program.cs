@@ -55,7 +55,9 @@ try
 {
     Log.Logger.Information("Application starting ...");
 
-    await services.GetRequiredService<IFilterApp>().Handle();
+    var filePath = "../../../../TextFilterApps.Infrastructure/Files/TextInput.txt";
+
+    await services.GetRequiredService<IFilterApp>().HandleTextFilter(filePath);
 
     Log.Logger.Information("Application stopped running ...");
     Console.ReadKey();

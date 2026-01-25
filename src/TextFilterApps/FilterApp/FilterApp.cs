@@ -14,7 +14,7 @@ public class FilterApp : IFilterApp
         _textFilterProcessor = textFilterProcessor;
     }
 
-    public async Task Handle()
+    public async Task HandleTextFilter(string filePath)
     {
         try
         {
@@ -24,8 +24,6 @@ public class FilterApp : IFilterApp
                 new ContainsTFilter(),
                 new VowelMiddleFilter()
             };
-
-            var filePath = "../../../../TextFilterApps.Infrastructure/Files/TextInput.txt";
 
             if (!File.Exists(filePath))
             {
