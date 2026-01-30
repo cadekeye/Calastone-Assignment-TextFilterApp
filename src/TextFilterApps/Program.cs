@@ -49,7 +49,7 @@ var host = Host.CreateDefaultBuilder()
     .Build();
 
 using var scope = host.Services.CreateScope();
-var services = scope.ServiceProvider;
+var serviceProvider = scope.ServiceProvider;
 
 try
 {
@@ -57,7 +57,7 @@ try
 
     var filePath = "../../../../TextFilterApps.Infrastructure/Files/TextInput.txt";
 
-    await services.GetRequiredService<IFilterApp>().HandleTextFilter(filePath);
+    await serviceProvider.GetRequiredService<IFilterApp>().HandleTextFilter(filePath);
 
     Log.Logger.Information("Application stopped running ...");
     Console.ReadKey();
