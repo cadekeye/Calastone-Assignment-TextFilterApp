@@ -5,11 +5,10 @@ namespace TextFilterApps.Application.Filters
     // Filter3: Remove words containing 't'
     public class ContainsTFilter : ITextFilter
     {
-        private readonly string _filterString;
+        private readonly string _filterString = "t";
 
         public ContainsTFilter()
         {
-            _filterString = "t";
         }
 
         public ContainsTFilter(string filterCharacter)

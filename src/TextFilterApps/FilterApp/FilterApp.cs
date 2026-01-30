@@ -21,7 +21,7 @@ public class FilterApp : IFilterApp
             ITextFilter[] filters = new ITextFilter[]
             {
                 new MinLengthFilter(),
-                new ContainsTFilter("t"),
+                new ContainsTFilter(),
                 new VowelMiddleFilter()
             };
 
